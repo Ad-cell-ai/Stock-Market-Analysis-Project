@@ -1,8 +1,45 @@
-pandas
-numpy
-matplotlib
-scikit-learn
-xgboost
-yfinance
-ta
-streamlit
+# Stock Market Analysis (Images-Only Code Project)
+
+This repository demonstrates a compact **stock market analysis** project, shared with all **source code as images** (per request). You can upload this to GitHub directly.
+
+> Note: Since the code is in image form (`.png`), it is **not executable** as-is. To run it, manually retype the code or use OCR to extract text from the images.
+
+## Features
+- Fetch historical price data (via `yfinance`)
+- Compute common indicators: SMA, EMA, RSI, MACD
+- Simple Moving Average Crossover backtest
+- Matplotlib charts saved to `outputs/`
+- Command-line friendly interface
+
+## Project Structure (Images)
+```
+images/
+  main.py.png
+  data.py.png
+  indicators.py.png
+  backtest.py.png
+  analysis.py.png
+  utils.py.png
+  requirements.txt.png
+  .gitignore.png
+  LICENSE.txt.png
+```
+
+## Quick Start (If you convert code to text)
+1. Create a virtual environment and install dependencies from `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run:
+   ```bash
+   python main.py --ticker TCS.NS --period 1y --fast 20 --slow 50
+   ```
+
+## Notes
+- Replace `TCS.NS` with your preferred ticker (for NSE symbols via Yahoo Finance).
+- Charts and CSV outputs are written to `outputs/`.
+- Educational use only. Not investment advice.
+
+## License
+MIT
+
